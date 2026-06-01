@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+.next/
+*.local
+
+# Docker
+.dockerignore
+
+# macOS
+.DS_Store
+
+# Secrets / credentials
+*.pem
+*.key
+*.crt
+kubeconfig
+auth.json
+
+# Helm
+charts/
+*.tgz
+
+# IDE
+.vscode/
+.idea/
+*.swp
