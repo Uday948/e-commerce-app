@@ -1,0 +1,22 @@
+replicas: 1
+
+# Single-node for local dev
+clusterName: ecommerce-logs
+
+config:
+  opensearch.yml: |
+    cluster.name: ecommerce-logs
+    network.host: 0.0.0.0
+    discovery.type: single-node
+    plugins.security.disabled: true
+
+resources:
+  requests:
+    memory: "512Mi"
+    cpu: "250m"
+  limits:
+    memory: "1Gi"
+    cpu: "500m"
+
+persistence:
+  size: 5Gi
