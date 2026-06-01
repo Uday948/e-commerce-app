@@ -14,7 +14,7 @@ spec:
       helm:
         valueFiles:
           - $values/helm/opensearch-values.yaml
-    - repoURL: https://github.com/YOUR_GITHUB_USERNAME/e-commerce-app.git
+    - repoURL: https://github.com/Uday948/e-commerce-app.git
       targetRevision: main
       ref: values
   destination:
